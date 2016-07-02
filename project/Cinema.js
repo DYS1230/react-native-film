@@ -45,9 +45,7 @@ export default class FilmInfo extends Component {
 
 	render() {
 		return (
-			<View 				
-				onStartShouldSetResponder={(event)=>false}
-				onMoveShouldSetResponder={(event)=>false}> 
+			<View> 
 				<BackNav navigator={this.props.navigator} />
 				{this.state.loading ? this.loadingData() : this.renderInfo() }
 			</View>
@@ -123,7 +121,8 @@ export default class FilmInfo extends Component {
 
 	pressImg(index, _id) {
 		this.setState({
-			currentMovieIndex: index
+			currentMovieIndex: index,
+			currentDateIndex: 0
 		});
 		this.fetchData(_id);
 	}

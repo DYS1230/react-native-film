@@ -76,9 +76,13 @@ class List extends Component {
 		});
 	}
 
-	getFilmInfo() {
+	getFilmInfo(id, name) {
 		this.props.navigator.push({
 			component: FilmInfo,
+			params: {
+				id: id,
+				name: name
+			}
 		})
 	}
 
@@ -89,7 +93,7 @@ class List extends Component {
 		var nm = film.nm.length > 11 ? film.nm.slice(0 ,11).concat('...') : film.nm;
 
 		return (
-			<TouchableOpacity onPress={() => this.getFilmInfo()}>
+			<TouchableOpacity onPress={() => this.getFilmInfo(film.id, film.nm)}>
 				<View style={styles.nav}>
 					<Image source={{uri: film.img}} style={styles.img}></Image>
 					<View style={styles.info}>

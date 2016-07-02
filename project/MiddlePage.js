@@ -93,7 +93,6 @@ class List extends Component {
 			component: Cinema,
 			params: {
 				id: id,
-				name: name
 			}
 		})
 	}
