@@ -23,7 +23,7 @@ export default class NavBarItem extends Component {
 		)
 	
 		return (
-			<TouchableHighlight style={styles.container} onPress={this.props.onPress} underlayColor="#B5B5B5">
+			<TouchableHighlight style={styles.container} onPress={this.props.onPress} underlayColor='#B5B5B5'>
 				<View style={styles.item}>
 					{itemImg}
 					{itemTitle}
@@ -36,7 +36,7 @@ export default class NavBarItem extends Component {
 var styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor:"#fff",
+		backgroundColor: '#fff',
 		alignItems: 'center',
 	},
 	item: {

@@ -148,14 +148,14 @@ var styles = StyleSheet.create({
 		fontSize: 16
 	},
 	verView: {
-		backgroundColor: "#2895db",
+		backgroundColor: '#2895db',
 		borderRadius: 2,
 		paddingLeft: 5,
 		paddingRight: 5,
 		marginLeft: 5
 	},
 	verText: {
-		color: "#fff",
+		color: '#fff',
 		fontSize: 10
 	},
 	showInfo: {

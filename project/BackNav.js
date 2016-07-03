@@ -36,7 +36,7 @@ var styles = StyleSheet.create({
 		borderWidth: 1,
         height: 12,
         width: 12,
-        borderColor: "#fff",
+        borderColor: '#fff',
         marginLeft: 20,
         marginTop: 5,
 	}

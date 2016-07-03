@@ -26,8 +26,6 @@ export default class MiddlePage extends Component {
 					let Component = route.component;
 					return <Component {...route.params} navigator={navigator} />
 				}}
-				onStartShouldSetResponder={(event)=>false}
-				onMoveShouldSetResponder={(event)=>false}
 			/>
 		)
 	}

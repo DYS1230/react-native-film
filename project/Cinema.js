@@ -20,8 +20,8 @@ var id, name, data;
 var movieIndex = 0, dateIndex = 0;
 var date = new Date();
 var month = date.getMonth() + 1;
-month = (month) < 10 ? "0" + month : month;
-var initDate = date.getFullYear() + "-" + month + "-" + date.getDate();
+month = (month) < 10 ? '0' + month : month;
+var initDate = date.getFullYear() + '-' + month + '-' + date.getDate();
 
 export default class FilmInfo extends Component {
 	constructor(props) {
@@ -56,7 +56,7 @@ export default class FilmInfo extends Component {
 	//	console.log('fuck');
 		return (
 			<View style={styles.processBar}>
-				<ProgressBarAndroid color="#e54847" styleAttr="Inverse" indeterminate={true} />
+				<ProgressBarAndroid color='#e54847' styleAttr='Inverse' indeterminate={true} />
 			</View>
 		)
 	}
@@ -79,7 +79,7 @@ export default class FilmInfo extends Component {
 			<View style={styles.cinemaContainer}>
 				<View style={styles.cinemaInfo}>
 					<Text>{data.cinemaDetailModel.addr}</Text>
-					<Text>{data.cinemaDetailModel.tel[0] || ""}</Text>
+					<Text>{data.cinemaDetailModel.tel[0] || ''}</Text>
 				</View>
 				<View>
 					<ScrollView style={styles.scrollImage} horizontal={true} >
@@ -151,7 +151,7 @@ export default class FilmInfo extends Component {
 	}
 
 	fetchData(id) {
-		var url = "http://m.maoyan.com/showtime/wrap.json?cinemaid=" + this.props.id + "&movieid=" + id;
+		var url = 'http://m.maoyan.com/showtime/wrap.json?cinemaid=' + this.props.id + '&movieid=' + id;
 		fetch(url)
 		.then((response) => {
 			return response.json();

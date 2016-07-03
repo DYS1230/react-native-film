@@ -10,7 +10,7 @@ export default class Header extends Component {
 	render() {
 		return (
 			<View style={styles.header}>
-				<Image source={require("../images/logo.png") } style={styles.logo}></Image>
+				<Image source={require('../images/logo.png') } style={styles.logo}></Image>
 			</View>
 		)
 	}
@@ -29,7 +29,7 @@ var styles = StyleSheet.create({
 	}
 });
 /*
-        backgroundColor: "#e54847",
+        backgroundColor: '#e54847',
         alignItems: 'center'
 
   ,
